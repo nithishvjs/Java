@@ -1,0 +1,28 @@
+import java.util.*;
+class Sample{
+    static int num(int x){
+        int temp,sum=0;
+        while(x>0){
+            temp=x%10;
+            int fact=1;
+            for(int i=1;i<=temp;i++){
+                fact=fact*i;
+            }
+            sum=sum+fact;
+            x=x/10;
+        }
+        return sum;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int strong=num(x);
+        int m=x;
+        if(strong==m)
+        System.out.println("Strong Number");
+        else
+        System.out.println("Not s strong number");
+    }
+
+
+//strong num: 145
