@@ -1,0 +1,24 @@
+import java.util.*;
+class Sample{
+    static int num(int x){
+        int temp = 0;
+        int sign = (x < 0)? -1 : 1;
+        x = Math.abs(x);
+        while(x > 0){
+            temp = temp * 10 + x % 10;
+            x = x / 10;
+        }
+        return temp * sign;
+    }
+    
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int m = x;
+        int palin = num(x);
+        if(palin == m)
+        System.out.println("Palindrome");
+        else
+        System.out.println("Not a palindrome");
+    }
+}
