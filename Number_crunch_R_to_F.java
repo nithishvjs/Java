@@ -14,7 +14,7 @@ class Sample{
         }
         while(m>0){
             temp=m%p;
-            m=m/10;
+            m=m%p;
             p=p/10;
         }
         System.out.println(temp);
