@@ -1,15 +1,15 @@
 import java.util.*;
 class Sample{
-    private int rollno;
+    private String name;
     private int age;
     
-    Sample(int n, int a){
-        rollno = n;
+    Sample(String n, int a){
+        name = n;
         age = a;
     }
     
-    public int getRollno(){
-        return rollno;
+    public String getName(){
+        return name;
     }
     
     public int getage(){
@@ -20,8 +20,10 @@ class Sample{
 
 class Main{
     public static void main(String args[]){
-        Sample obj = new Sample(10,21);
-        System.out.println(obj.getRollno());
+        Sample obj = new Sample("Nithish",21);
+        System.out.println(obj.getName());
         System.out.println(obj.getage());
     }
 }
+
+//One constructor can return only one value so we use two constructors
