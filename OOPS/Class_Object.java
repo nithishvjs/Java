@@ -12,7 +12,7 @@ class Sample {
     }
 }
 
-public class classObject {
+public class Main {
     public static void main(String args[]) {
         Sample obj1 = new Sample();
 
